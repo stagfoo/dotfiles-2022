@@ -34,7 +34,7 @@ do
             # Change this to your values
             git config --local user.name "XXXXX"
             git config --local user.email XXXXX@XXXX
-            git config core.sshCommand "ssh -F ~/.ssh/config-XXXX"
+            git config --local --add core.sshCommand 'ssh -i ~/.ssh/id_rsa'
             #-------------------
             echo ""
             echo -e ${Yellow};
@@ -45,7 +45,7 @@ do
             # Change this to your values
             git config --local user.name "XXXX"
             git config --local user.email XXX@XXX
-            git config core.sshCommand "ssh -F ~/.ssh/config-XXX"
+            git config --local --add core.sshCommand 'ssh -i ~/.ssh/id_rsa1'
              #-------------------
             echo ""
             echo -e ${Yellow};
