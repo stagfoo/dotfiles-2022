@@ -17,6 +17,10 @@ MUS=(mp3 wav)
 PIC=(jpg jpeg png gif)
 VID=(mp4 mov flv avi)
 
+MUS_FOLDER="~/Music"
+PIC_FOLDER="~/Pictures"
+VID_FOLDER="~/Videos"
+
 # to move files to appropriate directories
 function moveto {
 	# properly set up the array
@@ -50,13 +54,13 @@ while [ 0 -lt 1 ]; do
 		EXT=$(ls -c1 ~/Desktop | head -1 | sed "s|.*\.||")
 
 		# check file extension against music
-		moveto ~/Sync/Music/0_Unsorted $FILE $EXT MUS[@]
+		moveto $MUS_FOLDER $FILE $EXT MUS[@]
 
 		# check file extension against pictures
-		moveto ~/Pictures/junk $FILE $EXT PIC[@]
+		moveto $PIC_FOLDER $FILE $EXT PIC[@]
 
 		# check file extension againt videos
-		moveto ~/Movies $FILE $EXT VID[@]
+		moveto $VID_FOLDER $FILE $EXT VID[@]
 
 	fi
 
