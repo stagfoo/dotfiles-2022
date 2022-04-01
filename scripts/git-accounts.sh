@@ -33,21 +33,23 @@ do
         "Basal")
             # Change this to your values
             git config --local user.name "XXXXX"
-            git config --local user.email xxxxx@xxxxx.xxxxx
+            git config --local user.email XXXXX@XXXX
+            git config core.sshCommand "ssh -F ~/.ssh/config-XXXX"
             #-------------------
             echo ""
             echo -e ${Yellow};
-            echo "( ･3･)🪄💫　👔　Basal is Set　👔"
+            echo "( ･3･)🪄💫　👔　XXXX is Set　👔"
             break
             ;;
         "Personal")
             # Change this to your values
-            git config --local user.name "XXXXX"
-            git config --local user.email XXXX@gmail.com
+            git config --local user.name "XXXX"
+            git config --local user.email XXX@XXX
+            git config core.sshCommand "ssh -F ~/.ssh/config-XXX"
              #-------------------
             echo ""
             echo -e ${Yellow};
-            echo "( ･3･)🪄💫　🦌　xxxx is Set　🦌"
+            echo "( ･3･)🪄💫　🦌　XXXX is Set　🦌"
             break
             ;;
         "Cancel")
